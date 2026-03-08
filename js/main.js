@@ -32,60 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cookieReject) cookieReject.addEventListener('click', () => closeCookiePopup('rejected'));
   }
 
-  // --- Preloader ---
-  const preloader = document.getElementById('preloader');
-  const preloaderVideo = document.getElementById('preloaderVideo');
-  const preloaderBar = document.getElementById('preloaderBar');
-  const preloaderSkip = document.getElementById('preloaderSkip');
-
-  if (preloader && preloaderVideo) {
-    // Só mostrar o preloader uma vez por sessão
-    if (sessionStorage.getItem('preloaderShown')) {
-      preloader.remove();
-      initCookiePopup();
-    } else {
-      document.body.style.overflow = 'hidden';
-
-      let dismissed = false;
-      const dismiss = () => {
-        if (dismissed) return;
-        dismissed = true;
-        sessionStorage.setItem('preloaderShown', '1');
-        preloader.classList.add('fade-out');
-        document.body.style.overflow = '';
-        setTimeout(() => {
-          preloader.remove();
-          initCookiePopup();
-        }, 700);
-      };
-
-      // Fallback: se o vídeo não arrancar em 45s, dispensar automaticamente
-      const fallbackTimer = setTimeout(dismiss, 45000);
-
-      preloaderVideo.addEventListener('timeupdate', () => {
-        if (preloaderVideo.duration) {
-          preloaderBar.style.width = (preloaderVideo.currentTime / preloaderVideo.duration * 100) + '%';
-        }
-      });
-
-      preloaderVideo.addEventListener('ended', () => {
-        clearTimeout(fallbackTimer);
-        dismiss();
-      });
-
-      preloaderVideo.addEventListener('error', () => {
-        clearTimeout(fallbackTimer);
-        dismiss();
-      });
-
-      if (preloaderSkip) preloaderSkip.addEventListener('click', () => {
-        clearTimeout(fallbackTimer);
-        dismiss();
-      });
-    }
-  } else {
-    initCookiePopup();
-  }
+  initCookiePopup();
 
   // --- Hero video mobile autoplay fallback ---
   var heroVideo = document.querySelector('.hero__video');
