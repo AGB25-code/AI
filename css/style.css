@@ -1396,28 +1396,37 @@ img {
 /* --- WhatsApp Floating Button --- */
 .whatsapp-float {
   position: fixed;
-  bottom: 1.8rem;
-  right: 1.8rem;
-  width: 56px;
-  height: 56px;
-  background: #25D366;
+  bottom: 2rem;
+  right: 2rem;
+  width: 52px;
+  height: 52px;
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9998;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  background: #25D366;
+  border-color: #25D366;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35);
 }
 
 .whatsapp-float svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
+  fill: rgba(255, 255, 255, 0.7);
+  transition: fill 0.3s ease;
+}
+
+.whatsapp-float:hover svg {
   fill: #fff;
 }
 
