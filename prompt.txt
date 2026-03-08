@@ -1,0 +1,7 @@
+Claude eu quero fazer um site para o ambiente Interiores "AI", quero a landing page do estilo da landing.png , onde Ambiente Interiores esta                        
+    centrado no header, Inicio Sobre Nos Ambiente Interiores Portfolio Contactos. Quero que a imagem da landing page seja sobre.png e que coloques                
+     a imagem logo 1.png e logo 2.png (ambas sem fundo) sobreposta a sobre.png (Como esta no exemplo landing.png). A seguir a landing quero uma                       
+    secçao a contar um pouco da historia da empresa (do estilo da secçao 2.png), a seguir Quero uma secçao de serviços e queria do estilo da                      
+    Secçao 3 Servicos.png , queria a divisao com linhas na diagonal como esta na imagem que disse. E no final um CTA estetico. Quando clicasse em                     
+    Portfolio no header queria que o portfolio tivesse este estilo de grid como na imagem Portfolio.png . Quando clico em Contactos abria uma                     
+    pagina do estilo da imagem Contactos.png , tens a imagem edificio.png na pasta usa a. Qualquer duvida pergunta  Verifica as imagens que falei com rigor 

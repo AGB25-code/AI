@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambientes Interiores | Mobiliário à Sua Medida</title>
+  <meta name="description" content="Ambientes Interiores - Desenhamos Ambientes, Criamos Conforto. Mobiliário por medida, carpintaria e design de interiores.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Logo 1.png">
+  <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <video class="preloader__video" id="preloaderVideo" autoplay muted playsinline>
+      <source src="inicio_melhorado.mp4" type="video/mp4">
+    </video>
+    <div class="preloader__progress">
+      <div class="preloader__bar" id="preloaderBar"></div>
+    </div>
+    <button class="preloader__skip" id="preloaderSkip">Saltar &#8250;</button>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <ul class="nav__links" id="navMain">
+        <li><a href="index.html" class="nav__link active">Inicio</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre Nos</a></li>
+        <li class="nav__dropdown">
+          <a href="portfolio.html" class="nav__link">Portfolio</a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="portfolio.html#cozinhas" class="nav__dropdown-link">Cozinhas</a></li>
+            <li><a href="portfolio.html#quartos" class="nav__dropdown-link">Quartos</a></li>
+            <li><a href="portfolio.html#salas" class="nav__dropdown-link">Salas</a></li>
+            <li><a href="portfolio.html#mobiliario" class="nav__dropdown-link">Mobiliário</a></li>
+            <li><a href="portfolio.html#comercial" class="nav__dropdown-link">Comercial</a></li>
+          </ul>
+        </li>
+        <li class="nav__brand-item"><a href="index.html" class="nav__brand"><img src="logo2-clean.png" alt="Ambientes Interiores" class="nav__logo"></a></li>
+        <li><a href="contactos.html" class="nav__link">Contactos</a></li>
+        <li><a href="profissionais.html" class="nav__link nav__link--pro">Profissionais</a></li>
+      </ul>
+      <a href="index.html" class="nav__brand-mobile"><img src="logo2-clean.png" alt="Ambientes Interiores"></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <ul class="nav__links" id="mobileNav">
+      <li><a href="index.html" class="nav__link active">Inicio</a></li>
+      <li><a href="#sobre" class="nav__link">Sobre Nos</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+      <li><a href="contactos.html" class="nav__link">Contactos</a></li>
+      <li><a href="profissionais.html" class="nav__link nav__link--pro">Profissionais</a></li>
+    </ul>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <video class="hero__video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="inicio_melhorado.mp4" type="video/mp4">
+    </video>
+    <img src="sobre.png" alt="Ambientes Interiores - Carpintaria" class="hero__bg hero__bg--fallback">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+    </div>
+    <div class="hero__scroll" id="scrollIndicator">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / HISTORY ===== -->
+  <section class="about" id="sobre">
+    <div class="about__text fade-in-left">
+      <p class="about__label">Sobre Nos</p>
+      <h2 class="about__title">Um Grupo,<br>Três Pilares</h2>
+      <p class="about__description">
+        A <strong>Ambientes Interiores</strong> é a marca comercial que dá rosto ao projeto: um espaço de design e consultoria onde cada cliente encontra soluções de mobiliário por medida, desenhadas à sua medida e ao seu estilo de vida.
+      </p>
+      <p class="about__description">
+        Por detrás de cada peça está a <strong>Cunha Mobiliário</strong>, a nossa fábrica de produção, onde artesãos experientes e tecnologia de ponta se unem para transformar matéria-prima selecionada em mobiliário de excelência. É aqui que a qualidade nasce.
+      </p>
+      <p class="about__description">
+        O <strong>Grupo JVR</strong> é a sociedade que gere a marca Ambientes Interiores, assegurando a gestão e a estratégia que unem a marca comercial e a fábrica de produção numa cadeia integrada ao serviço do cliente.
+      </p>
+      <div class="about__ctas">
+        <a href="sobre-ai.html" class="about__cta">Conheça Ambientes Interiores</a>
+        <a href="sobre-cunha.html" class="about__cta about__cta--outline">Conheça a Fábrica Cunha Mobiliário</a>
+      </div>
+    </div>
+    <div class="about__image fade-in-right">
+      <img src="loja.png" alt="Loja Ambientes Interiores">
+    </div>
+  </section>
+
+  <!-- ===== SERVICES (Diagonal Panels) ===== -->
+  <section class="services" id="servicos">
+    <!-- Panel 1 - Carpintaria -->
+    <div class="services__panel">
+      <img src="sobre.png" alt="" class="services__panel-bg">
+      <div class="services__panel-overlay"></div>
+      <div class="services__panel-content fade-in">
+        <div class="services__icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 56l20-20M18 46l4 4M28 36l4 4"/>
+            <path d="M38 8l18 18-8 8-18-18z"/>
+            <path d="M42 12l10 10"/>
+          </svg>
+        </div>
+        <h3 class="services__panel-title">Carpintaria</h3>
+        <p class="services__panel-desc">
+          Trabalho artesanal em madeira com décadas de experiência. Cada peça é criada com precisão e dedicação, garantindo durabilidade e beleza.
+        </p>
+      </div>
+    </div>
+
+    <!-- Panel 2 - Mobiliário por Medida -->
+    <div class="services__panel">
+      <img src="edificio.png" alt="" class="services__panel-bg">
+      <div class="services__panel-overlay"></div>
+      <div class="services__panel-content fade-in">
+        <div class="services__icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="28" width="48" height="28" rx="2"/>
+            <path d="M16 28V16a4 4 0 014-4h24a4 4 0 014 4v12"/>
+            <path d="M8 42h48"/>
+            <path d="M24 42v14M40 42v14"/>
+          </svg>
+        </div>
+        <h3 class="services__panel-title">Mobiliário por Medida</h3>
+        <p class="services__panel-desc">
+          Criamos móveis exclusivos adaptados ao seu espaço e estilo de vida. Soluções personalizadas que maximizam funcionalidade e estética.
+        </p>
+      </div>
+    </div>
+
+    <!-- Panel 3 - Design de Interiores -->
+    <div class="services__panel">
+      <img src="sobre.png" alt="" class="services__panel-bg">
+      <div class="services__panel-overlay"></div>
+      <div class="services__panel-content fade-in">
+        <div class="services__icon">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="20" r="12"/>
+            <path d="M20 20h24"/>
+            <path d="M32 8v24"/>
+            <path d="M24 32v20a4 4 0 004 4h8a4 4 0 004-4V32"/>
+            <path d="M20 44h24"/>
+          </svg>
+        </div>
+        <h3 class="services__panel-title">Design de Interiores</h3>
+        <p class="services__panel-desc">
+          Projetamos ambientes que refletem a sua personalidade. Do conceito à execução, transformamos a sua visão em realidade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANTES & DEPOIS ===== -->
+  <section class="beforeafter" id="antesdepois">
+    <div class="beforeafter__header fade-in">
+      <p class="beforeafter__label">Projetos</p>
+      <h2 class="beforeafter__title">Antes &amp; Depois</h2>
+      <p class="beforeafter__subtitle">Arraste para ver a transformação dos nossos projetos.</p>
+    </div>
+    <div class="beforeafter__grid">
+
+      <!-- Projeto 1 -->
+      <div class="beforeafter__item fade-in">
+        <div class="beforeafter__slider" data-before="Antes" data-after="Depois">
+          <div class="beforeafter__img beforeafter__img--before">
+            <img src="sobre.png" alt="Antes - Projeto 1">
+          </div>
+          <div class="beforeafter__img beforeafter__img--after">
+            <img src="loja.png" alt="Depois - Projeto 1">
+          </div>
+          <div class="beforeafter__handle">
+            <div class="beforeafter__handle-line"></div>
+            <div class="beforeafter__handle-circle">
+              <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+              <svg viewBox="0 0 24 24"><polyline points="15,6 9,12 15,18"/></svg>
+            </div>
+            <div class="beforeafter__handle-line"></div>
+          </div>
+        </div>
+        <p class="beforeafter__caption">Cozinha Moderna — Lordelo</p>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="beforeafter__item fade-in">
+        <div class="beforeafter__slider" data-before="Antes" data-after="Depois">
+          <div class="beforeafter__img beforeafter__img--before">
+            <img src="edificio.png" alt="Antes - Projeto 2">
+          </div>
+          <div class="beforeafter__img beforeafter__img--after">
+            <img src="sobre.png" alt="Depois - Projeto 2">
+          </div>
+          <div class="beforeafter__handle">
+            <div class="beforeafter__handle-line"></div>
+            <div class="beforeafter__handle-circle">
+              <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+              <svg viewBox="0 0 24 24"><polyline points="15,6 9,12 15,18"/></svg>
+            </div>
+            <div class="beforeafter__handle-line"></div>
+          </div>
+        </div>
+        <p class="beforeafter__caption">Sala de Estar — Porto</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROCESS / COMO FUNCIONA ===== -->
+  <section class="process" id="processo">
+    <div class="process__header fade-in">
+      <p class="process__label">Como Funciona</p>
+      <h2 class="process__title">Do Conceito<br>à Realidade</h2>
+    </div>
+    <div class="process__steps">
+      <div class="process__step fade-in">
+        <div class="process__step-number">01</div>
+        <div class="process__step-icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z"/><path d="M16 24h16M24 16v16"/></svg>
+        </div>
+        <h3 class="process__step-title">Consulta Inicial</h3>
+        <p class="process__step-text">Ouvimos as suas necessidades, analisamos o espaço e definimos juntos o conceito ideal para o seu projeto.</p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__step-number">02</div>
+        <div class="process__step-icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="2"/><path d="M6 18h36M18 18v24"/></svg>
+        </div>
+        <h3 class="process__step-title">Projeto &amp; Design 3D</h3>
+        <p class="process__step-text">Criamos o projeto detalhado com visualizações 3D realistas para que possa ver o resultado antes da produção.</p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__step-number">03</div>
+        <div class="process__step-icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M8 40l14-14M14 34l4 4M22 28l4 4"/><path d="M30 8l12 12-6 6-12-12z"/><path d="M34 12l6 6"/></svg>
+        </div>
+        <h3 class="process__step-title">Produção na Fábrica</h3>
+        <p class="process__step-text">Na Cunha Mobiliário, artesãos experientes e tecnologia de ponta transformam o projeto em peças de excelência.</p>
+      </div>
+      <div class="process__step fade-in">
+        <div class="process__step-number">04</div>
+        <div class="process__step-icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 38h40"/><path d="M8 38V18l16-10 16 10v20"/><path d="M18 38V28h12v10"/></svg>
+        </div>
+        <h3 class="process__step-title">Entrega &amp; Montagem</h3>
+        <p class="process__step-text">Entregamos e montamos tudo no seu espaço, garantindo que cada detalhe fica perfeito. O resultado final é seu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTEMUNHOS ===== -->
+  <section class="testimonials" id="testemunhos">
+    <div class="testimonials__header fade-in">
+      <p class="testimonials__label">Testemunhos</p>
+      <h2 class="testimonials__title">O Que Dizem<br>os Nossos Clientes</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonials__card fade-in">
+        <div class="testimonials__stars">
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+        </div>
+        <p class="testimonials__quote">"A cozinha ficou exatamente como tínhamos imaginado. O acompanhamento desde o projeto 3D até à montagem foi impecável. Recomendamos sem hesitar."</p>
+        <div class="testimonials__author">
+          <p class="testimonials__name">Ana &amp; Pedro Silva</p>
+          <p class="testimonials__project">Cozinha por Medida — Porto</p>
+        </div>
+      </div>
+      <div class="testimonials__card fade-in">
+        <div class="testimonials__stars">
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+        </div>
+        <p class="testimonials__quote">"Profissionalismo do início ao fim. A qualidade dos materiais e o acabamento são de outro nível. A nossa sala ganhou uma vida nova."</p>
+        <div class="testimonials__author">
+          <p class="testimonials__name">Maria Ferreira</p>
+          <p class="testimonials__project">Sala de Estar — Paredes</p>
+        </div>
+      </div>
+      <div class="testimonials__card fade-in">
+        <div class="testimonials__stars">
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+          <svg viewBox="0 0 20 20"><polygon points="10,1 12.5,7 19,7.5 14,12 15.5,19 10,15.5 4.5,19 6,12 1,7.5 7.5,7"/></svg>
+        </div>
+        <p class="testimonials__quote">"Renovámos o escritório inteiro com a Ambientes Interiores. Prazos cumpridos, comunicação excelente e resultado fantástico. Voltaremos certamente."</p>
+        <div class="testimonials__author">
+          <p class="testimonials__name">Dr. Carlos Mendes</p>
+          <p class="testimonials__project">Escritório Comercial — Penafiel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MATERIAIS / PERSONALIZAÇÃO ===== -->
+  <section class="materials" id="materiais">
+    <div class="materials__content">
+      <div class="materials__text fade-in-left">
+        <p class="materials__label">Personalização</p>
+        <h2 class="materials__title">Materiais de<br>Excelência</h2>
+        <p class="materials__description">
+          Cada projeto é único porque cada cliente é único. Trabalhamos com uma vasta gama de materiais selecionados — madeiras nobres, lacados, melaminas, pedras naturais e acabamentos premium.
+        </p>
+        <p class="materials__description">
+          Na nossa fábrica, pode escolher entre centenas de combinações de cores, texturas e acabamentos para criar peças verdadeiramente personalizadas ao seu gosto.
+        </p>
+        <div class="materials__features">
+          <div class="materials__feature">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Madeiras nobres e sustentáveis</span>
+          </div>
+          <div class="materials__feature">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Lacados em qualquer cor RAL</span>
+          </div>
+          <div class="materials__feature">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Pedras naturais e compostas</span>
+          </div>
+          <div class="materials__feature">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Ferragens de qualidade superior</span>
+          </div>
+          <div class="materials__feature">
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Acabamentos personalizados</span>
+          </div>
+        </div>
+      </div>
+      <div class="materials__visual fade-in-right">
+        <div class="materials__grid">
+          <div class="materials__swatch materials__swatch--wood">
+            <span>Carvalho Natural</span>
+          </div>
+          <div class="materials__swatch materials__swatch--dark">
+            <span>Nogueira Escura</span>
+          </div>
+          <div class="materials__swatch materials__swatch--white">
+            <span>Lacado Branco</span>
+          </div>
+          <div class="materials__swatch materials__swatch--grey">
+            <span>Lacado Cinza</span>
+          </div>
+          <div class="materials__swatch materials__swatch--stone">
+            <span>Pedra Natural</span>
+          </div>
+          <div class="materials__swatch materials__swatch--black">
+            <span>Lacado Negro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS 3D ===== -->
+  <section class="projects3d" id="projetos3d">
+    <div class="projects3d__content fade-in">
+      <div class="projects3d__icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 4L4 20v24l28 16 28-16V20L32 4z"/><path d="M4 20l28 16 28-16"/><path d="M32 36v28"/></svg>
+      </div>
+      <h2 class="projects3d__title">Visualize o Seu Projeto em 3D</h2>
+      <p class="projects3d__text">
+        Antes de iniciar a produção, criamos visualizações 3D fotorrealistas do seu projeto. Veja cada detalhe — cores, materiais, proporções — e faça ajustes até estar 100% satisfeito. Sem surpresas, sem riscos.
+      </p>
+      <a href="contactos.html" class="projects3d__btn">Peça o Seu Projeto 3D</a>
+    </div>
+  </section>
+
+  <!-- ===== SUSTENTABILIDADE ===== -->
+  <section class="sustainability" id="sustentabilidade">
+    <div class="sustainability__content">
+      <div class="sustainability__visual fade-in-left">
+        <div class="sustainability__icon-grid">
+          <div class="sustainability__icon-item">
+            <svg viewBox="0 0 48 48"><path d="M24 4C14 4 8 14 8 24c0 6 4 12 8 16h16c4-4 8-10 8-16C40 14 34 4 24 4z"/><path d="M24 44v-20"/><path d="M24 24c-4-4-8-2-10 2"/><path d="M24 30c4-4 8-2 10 2"/></svg>
+            <span>Matérias-Primas Sustentáveis</span>
+          </div>
+          <div class="sustainability__icon-item">
+            <svg viewBox="0 0 48 48"><path d="M24 4v8M4 24h8M36 24h8M24 36v8"/><circle cx="24" cy="24" r="10"/><path d="M10.4 10.4l5.6 5.6M32 32l5.6 5.6M10.4 37.6l5.6-5.6M32 16l5.6-5.6"/></svg>
+            <span>Produção Local</span>
+          </div>
+          <div class="sustainability__icon-item">
+            <svg viewBox="0 0 48 48"><path d="M18 44l-6-14H6l8-12 4-14h12l4 14 8 12h-6l-6 14z"/></svg>
+            <span>Desperdício Reduzido</span>
+          </div>
+          <div class="sustainability__icon-item">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="M16 24l6 6 12-12"/></svg>
+            <span>Qualidade Duradoura</span>
+          </div>
+        </div>
+      </div>
+      <div class="sustainability__text fade-in-right">
+        <p class="sustainability__label">Sustentabilidade</p>
+        <h2 class="sustainability__title">Mobiliário com<br>Consciência</h2>
+        <p class="sustainability__description">
+          Na Cunha Mobiliário, a sustentabilidade faz parte do nosso ADN. Utilizamos madeiras de origem certificada, otimizamos o uso de matérias-primas para reduzir desperdício e apostamos numa produção 100% local.
+        </p>
+        <p class="sustainability__description">
+          Acreditamos que mobiliário de qualidade é, por natureza, sustentável — peças feitas para durar gerações, não para serem descartadas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRÉMIOS / SELOS DE CONFIANÇA ===== -->
+  <section class="trust" id="confianca">
+    <div class="trust__header fade-in">
+      <p class="trust__label">Confiança</p>
+      <h2 class="trust__title">Porquê Escolher-nos</h2>
+    </div>
+    <div class="trust__grid">
+      <div class="trust__item fade-in">
+        <div class="trust__icon">
+          <svg viewBox="0 0 48 48"><path d="M24 4l6 12h14l-11 8 4 14-13-9-13 9 4-14L4 16h14z"/></svg>
+        </div>
+        <h3 class="trust__item-title">+30 Anos de Experiência</h3>
+        <p class="trust__item-text">Décadas de conhecimento em carpintaria e mobiliário por medida.</p>
+      </div>
+      <div class="trust__item fade-in">
+        <div class="trust__icon">
+          <svg viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z"/><path d="M16 24l6 6 12-12"/></svg>
+        </div>
+        <h3 class="trust__item-title">Fábrica Própria</h3>
+        <p class="trust__item-text">Controlo total de qualidade com produção na nossa fábrica em Lordelo.</p>
+      </div>
+      <div class="trust__item fade-in">
+        <div class="trust__icon">
+          <svg viewBox="0 0 48 48"><path d="M12 4h24v40H12z"/><path d="M18 12h12M18 18h12M18 24h8"/><path d="M12 34h24"/></svg>
+        </div>
+        <h3 class="trust__item-title">Projeto Personalizado</h3>
+        <p class="trust__item-text">Cada projeto é desenhado à medida das suas necessidades e do seu espaço.</p>
+      </div>
+      <div class="trust__item fade-in">
+        <div class="trust__icon">
+          <svg viewBox="0 0 48 48"><path d="M4 38h40M8 38V18l16-10 16 10v20"/><path d="M18 38V28h12v10"/></svg>
+        </div>
+        <h3 class="trust__item-title">Entrega &amp; Montagem</h3>
+        <p class="trust__item-text">Serviço completo com entrega, montagem profissional e acompanhamento pós-venda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section">
+    <div class="cta-section__content fade-in">
+      <h2 class="cta-section__title">Pronto para Transformar<br>o Seu Espaço?</h2>
+      <p class="cta-section__text">
+        Entre em contacto connosco e descubra como podemos criar o ambiente perfeito para si. Cada projeto começa com uma conversa.
+      </p>
+      <a href="contactos.html" class="cta-section__btn">Fale Connosco</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <p class="footer__copy">&copy; 2026 Ambientes Interiores. Todos os direitos reservados.</p>
+        <p class="footer__dev">Developed by <a href="https://www.agbcorporate.pt" target="_blank" rel="noopener noreferrer" class="footer__link footer__link--agb">AGB</a></p>
+      </div>
+      <div class="footer__col">
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Inicio</a>
+          <a href="portfolio.html" class="footer__link">Portfolio</a>
+          <a href="contactos.html" class="footer__link">Contactos</a>
+          <a href="faq.html" class="footer__link">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__links">
+          <a href="termos.html" class="footer__link">Termos e Condições</a>
+          <a href="privacidade.html" class="footer__link">Política de Privacidade</a>
+          <a href="cookies.html" class="footer__link">Política de Cookies</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+          </a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.19-.78 1.22-5.17 1.22-5.17s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.57 2.25-.87 3.5-.25 1.05.53 1.91 1.56 1.91 1.88 0 3.33-1.98 3.33-4.85 0-2.53-1.82-4.3-4.42-4.3-3.01 0-4.78 2.26-4.78 4.59 0 .91.35 1.88.79 2.41.09.11.1.2.07.31-.08.33-.26 1.05-.3 1.2-.05.19-.16.23-.36.14-1.34-.62-2.18-2.58-2.18-4.16 0-3.38 2.46-6.49 7.09-6.49 3.72 0 6.62 2.65 6.62 6.2 0 3.7-2.33 6.68-5.57 6.68-1.09 0-2.11-.56-2.46-1.23l-.67 2.55c-.24.93-.89 2.1-1.33 2.81.1.03.2.05.31.08C18.35 21.86 22 17.37 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+  <a href="https://wa.me/351224440774?text=Olá! Gostaria de saber mais sobre os vossos serviços." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.962a15.917 15.917 0 008.832 2.676C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.53 22.61c-.396 1.116-2.328 2.076-3.222 2.172-.894.096-1.722.402-5.808-1.212-4.914-1.938-8.04-6.96-8.28-7.284-.24-.324-1.956-2.604-1.956-4.968s1.236-3.528 1.68-4.008c.444-.48.966-.6 1.284-.6.318 0 .636.006.912.018.294.012.684-.108 1.068.816.396.954 1.344 3.288 1.464 3.528.12.24.198.516.042.834-.156.318-.24.516-.468.792-.24.276-.498.618-.714.828-.24.24-.486.498-.21.978.276.48 1.236 2.04 2.652 3.3 1.824 1.626 3.36 2.13 3.84 2.37.48.24.756.198 1.032-.12.276-.318 1.188-1.386 1.506-1.86.318-.48.636-.396 1.068-.24.432.156 2.76 1.302 3.234 1.536.474.24.792.354.912.546.114.198.114 1.116-.282 2.232z" fill="#fff"/></svg>
+  </a>
+
+  <!-- ===== COOKIE POPUP ===== -->
+  <div class="cookie-popup" id="cookiePopup">
+    <div class="cookie-popup__content">
+      <p class="cookie-popup__text">Este website utiliza cookies para melhorar a sua experiência de navegação. Ao continuar, concorda com os nossos <a href="termos.html" class="cookie-popup__link">Termos e Condições</a>, <a href="privacidade.html" class="cookie-popup__link">Política de Privacidade</a> e <a href="cookies.html" class="cookie-popup__link">Política de Cookies</a>.</p>
+      <div class="cookie-popup__actions">
+        <button class="cookie-popup__btn cookie-popup__btn--accept" id="cookieAccept">Aceitar</button>
+        <button class="cookie-popup__btn cookie-popup__btn--reject" id="cookieReject">Rejeitar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
