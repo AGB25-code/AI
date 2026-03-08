@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -19,7 +24,6 @@ body {
   font-family: 'Inter', sans-serif;
   color: #333;
   background: #fff;
-  overflow-x: hidden;
 }
 
 a {
@@ -2388,15 +2392,21 @@ img {
   }
 
   .hero {
-    min-height: 100vh;
-    min-height: 100svh;
+    height: 100vh;
+    height: 100svh;
+    min-height: 0;
   }
 
   .hero__video {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
     object-fit: cover;
-    object-position: center center;
   }
 
   .hero__content {
