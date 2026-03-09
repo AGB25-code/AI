@@ -126,6 +126,15 @@ img {
   position: relative;
 }
 
+.nav__dropdown > .nav__link {
+  pointer-events: none;
+  cursor: default;
+}
+
+.nav__dropdown:hover > .nav__link {
+  color: #fff;
+}
+
 .nav__dropdown-menu {
   position: absolute;
   top: 100%;
@@ -407,12 +416,12 @@ img {
 .sobre-page {
   min-height: 100vh;
   background: #fff;
-  padding-top: 80px;
+  padding-top: 0;
 }
 
 .sobre-hero {
   background: #111;
-  padding: 5rem 8%;
+  padding: calc(80px + 5rem) 8% 5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
