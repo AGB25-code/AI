@@ -18,7 +18,13 @@
     <nav class="nav">
       <ul class="nav__links" id="navMain">
         <li><a href="index.html" class="nav__link">Inicio</a></li>
-        <li><a href="index.html#sobre" class="nav__link active">Sobre Nos</a></li>
+        <li class="nav__dropdown">
+          <a href="index.html#sobre" class="nav__link active">Sobre Nos</a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="sobre-ai.html" class="nav__dropdown-link">Ambientes Interiores</a></li>
+            <li><a href="sobre-cunha.html" class="nav__dropdown-link">Cunha Mobiliário</a></li>
+          </ul>
+        </li>
         <li class="nav__dropdown">
           <a href="portfolio.html" class="nav__link">Portfolio</a>
           <ul class="nav__dropdown-menu">
@@ -42,7 +48,8 @@
     </nav>
     <ul class="nav__links" id="mobileNav">
       <li><a href="index.html" class="nav__link">Inicio</a></li>
-      <li><a href="index.html#sobre" class="nav__link active">Sobre Nos</a></li>
+      <li><a href="sobre-ai.html" class="nav__link active">Ambientes Interiores</a></li>
+      <li><a href="sobre-cunha.html" class="nav__link">Cunha Mobiliário</a></li>
       <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
       <li><a href="contactos.html" class="nav__link">Contactos</a></li>
       <li><a href="profissionais.html" class="nav__link nav__link--pro">Profissionais</a></li>
